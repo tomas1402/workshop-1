@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	background-color: #CEEBF5;
+	letter-spacing: 2px;
+}
+
+a, a:visited, a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+
+header{
+	border-bottom: 1px solid grey;
+	padding-bottom: 20px;
+}
+
+.wrapper{
+	max-width: 1200px;
+	margin: auto;
+	box-shadow: 0 0 10px grey;
+	padding: 20px;
+	background-color: #F5F5F5;
+}
+
+.datos-flot{
+	float: left;
+}
+
+.datos-flot h1{
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+	color: #4CAF50;
+	letter-spacing: 7px;
+}
+
+.datos-flot h2{
+	font-size: 20px;
+}
+
+.header-icon{
+	font-size: 40px;
+	margin-right: 10px;
+}
+
+.perfil-float{
+	float: right;
+	margin-top: 30px;
+}
+
+.perfil-float img{
+	border: 1px solid #6C6C6C;
+	border-radius: 100px;
+	width: 170px;
+	box-shadow: 5px 5px 10px #A6A6A6;
+}
+
+.cleaner{
+	clear: both;
+}
+
+.perfil h3, .education h3, .skills h3, .contact h3{
+	font-size: 30px;
+	margin: 7px;
+	vertical-align: middle;
+	display: inline-block;
+	color: #009688;
+}
+
+
+
+.perfil, .skills, .education{
+	padding: 35px 0;
+	border-bottom: 1px solid grey;
+}
+
+.contact{
+	padding: 35px 0;
+}
+
+.skills article{
+	width: 21.66%;
+	margin:  1.66%;
+	float: left;
+	text-align: center;
+
+}
+
+.skills article p{
+	padding: 0 10px;
+}
+
+.skills article img{
+	width: 100%;
+	margin: auto;
+}
+
+.education article{
+	border-left: 1px solid black;
+	padding: 0 20px;
+	margin: 0 0 20px 40px;
+}
+
+.circulito{
+	width: 10px;
+	height: 10px;
+	position: relative;
+	float: left;
+	margin-left: -25px;
+	background-color: black;
+	border: 1px solid black;
+    border-radius: 25px;
+}
+
+.contact article{
+	width: auto;
+	text-align: center;
+}	
+
+.contact-contenedor{
+	max-width: 90%;
+	text-align: center;
+	margin: 40px auto;
+
+}
+
+.input-izq{
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+}
+
+.input-der{
+	float: right;
+	width: 45%;
+	margin: 2.5%;
+}
+
+.input-der input, .input-izq input{
+	width: 100%;
+	display: block;
+	padding: 20px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: 0 0 4px grey;
+}
+
+.input-der input{
+	height: 138px;
+}
+
+.contact-contenedor form button[type=submit]{
+	color: #009688;
+	padding: 10px;
+	margin-top: 30px;
+	border: 1px solid #009688;
+	box-shadow: 0 0 4px grey;
+	border-radius: 5px;
+	width: 150px;
+}
+
+@media (max-width: 700px){
+	.wrapper{
+		max-width: 96%;
+	}
+
+	.datos-flot{
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.perfil-float{
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin: 30px auto;
+	}
+
+	.skills article{
+		width: 46.64%;
+		margin:  1.66%;
+		float: left;
+		text-align: center;
+	}
+}
+
+@media (max-width: 480px){
+	.datos-flot h1{
+		font-size: 25px;
+	}
+
+	.perfil h3, .education h3, .skills h3, .contact h3{
+		font-size: 20px;
+	}
+
+	.input-izq{
+		float: none;
+		width: 100%;
+		margin: 2.5% auto;
+	}
+
+	.input-der{
+		float: right;
+		width: 100%;
+		margin: 2.5% auto;
+	}
+
+	.input-der input, .input-izq input{
+		width: 100%;
+		display: block;
+		padding: 20px;
+		border: 1px solid grey;
+		border-radius: 5px;
+		box-shadow: 0 0 4px grey;
+	}
+
+	.input-der input{
+		height: 138px;
+	}
+
+	.contact-contenedor form button[type=submit]{
+		color: #009688;
+		padding: 10px;
+		margin-top: 30px;
+		border: 1px solid #009688;
+		box-shadow: 0 0 4px grey;
+		border-radius: 5px;
+		width: 150px;
+	}
+}
